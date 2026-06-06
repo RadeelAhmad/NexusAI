@@ -1,8 +1,8 @@
-## NexusAI
+# NexusAI
 
 NexusAI is a lightweight AI chat application powered by the Gemini API. It provides a simple and user-friendly interface for interacting with Google's Gemini models while allowing users to manage API settings, model selection, and custom AI instructions.
 
-Features
+## Features
 🔐 Authentication
 Secure login page
 Default credentials:
