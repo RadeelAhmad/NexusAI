@@ -30,15 +30,6 @@ Customize the behavior of NexusAI through the configuration menu:
 - Switch between supported Gemini models
 - Modify AI behavior using custom instructions
 
-## Screenshots
-
-Add screenshots here:
-```bash
-Login Page
-Chat Interface
-Configuration Panel
-```
-
 ## Configuration Options
 
 ### API Key
