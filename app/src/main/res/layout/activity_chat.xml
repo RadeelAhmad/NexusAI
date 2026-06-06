@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_deep">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_card"
+        android:paddingVertical="8dp"
+        app:navigationIcon="@drawable/ic_back">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginStart="4dp">
+
+            <TextView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:text="✦"
+                android:textSize="18sp"
+                android:textColor="@color/green_bright"
+                android:gravity="center"
+                android:background="@drawable/bg_avatar"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gemini AI"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:fontFamily="monospace"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="● Online"
+                    android:textSize="11sp"
+                    android:textColor="@color/green_mid"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Messages -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="12dp"
+        android:clipToPadding="false"/>
+
+    <!-- Input Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/bg_card"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="10dp"
+        android:gravity="center_vertical"
+        android:elevation="8dp">
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Message Gemini..."
+            android:hintTextColor="@color/text_muted"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:background="@drawable/bg_input_round"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
+            android:maxLines="4"
+            android:inputType="textMultiLine|textCapSentences"
+            android:layout_marginEnd="10dp"/>
+
+        <ImageButton
+            android:id="@+id/btn_send"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:src="@drawable/ic_send"
+            android:background="@drawable/bg_send_btn"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

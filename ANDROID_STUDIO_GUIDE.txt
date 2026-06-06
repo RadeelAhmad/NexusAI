@@ -1,0 +1,134 @@
+# NexusAI — Android Studio Complete Guide
+# (Apne dost ko yeh file bhejo — sab kuch yahan hai)
+
+================================================
+  APP INFO
+================================================
+App Name   : NexusAI
+Login      : admin / 1234
+Gemini Key : AIzaSyBgNBEOr4r2FbsnuJ6IgVCtlEvNkh-SIc8 (already in code)
+Theme      : Black + Neon Green
+
+================================================
+  STEP 1 — Android Studio Open Karo
+================================================
+
+1. Android Studio open karo
+2. "Open" click karo (New Project NAHI)
+3. Is ZIP ko kisi folder mein extract karo
+   Example: C:\Users\YourName\Desktop\NexusAI_Android\
+4. Woh folder select karo → OK
+
+================================================
+  STEP 2 — Project Load Hone Do
+================================================
+
+- Neeche "Gradle sync" chal rahi hogi
+- Internet chahiye — dependencies download hongi
+- 3-5 minute lagenge (pehli baar)
+- Jab tak "BUILD SUCCESSFUL" ya "Sync finished" na aaye, wait karo
+
+================================================
+  STEP 3 — SDK Setup (Agar Error Aaye)
+================================================
+
+Agar "SDK not found" error aaye:
+1. File → Project Structure → SDK Location
+2. Android SDK path set karo
+   Usually: C:\Users\YourName\AppData\Local\Android\Sdk
+
+Agar "compileSdk 34 not installed":
+1. Tools → SDK Manager
+2. "Android 14.0 (API 34)" install karo ✓
+
+================================================
+  STEP 4 — APK Build Karo
+================================================
+
+Menu se:
+  Build → Build Bundle(s) / APK(s) → Build APK(s)
+
+Wait karo — 2-3 minute
+
+Jab done ho:
+  Neeche "locate" link aayega — click karo
+  Ya manually jao:
+  NexusAI_Android\app\build\outputs\apk\debug\app-debug.apk
+
+================================================
+  STEP 5 — Phone Pe Install Karo
+================================================
+
+METHOD A — USB se:
+1. USB cable se phone connect karo
+2. Phone mein: Settings → Developer Options → USB Debugging ON
+3. Android Studio mein upar device select karo
+4. Green "Run" button (▶) dabao
+5. App seedha phone pe install ho jayegi!
+
+METHOD B — APK file transfer se:
+1. app-debug.apk file copy karo
+2. WhatsApp / Google Drive / USB se phone pe bhejo
+3. Phone mein file tap karo
+4. Settings → Security → "Install Unknown Apps" → Allow
+5. Install karo → Done! ✅
+
+================================================
+  POSSIBLE ERRORS & FIXES
+================================================
+
+ERROR: "Gradle sync failed"
+FIX: File → Invalidate Caches → Invalidate and Restart
+
+ERROR: "Cannot resolve symbol R"
+FIX: Build → Clean Project → Rebuild Project
+
+ERROR: "Minimum SDK" warning
+FIX: Ignore karo, build chalta rehga
+
+ERROR: "JAVA_HOME not set"
+FIX: File → Project Structure → JDK Location → Android Studio ka default JDK select karo
+
+================================================
+  APP STRUCTURE (Reference ke liye)
+================================================
+
+NexusAI_Android/
+├── app/
+│   ├── build.gradle          ← Dependencies yahan hain
+│   └── src/main/
+│       ├── AndroidManifest.xml
+│       ├── java/com/nexusai/chat/
+│       │   ├── SplashActivity.java   ← Splash screen
+│       │   ├── LoginActivity.java    ← Login (admin/1234)
+│       │   ├── ChatActivity.java     ← Gemini chat ← API KEY YAHAN HAI
+│       │   ├── ChatAdapter.java      ← RecyclerView adapter
+│       │   └── ChatMessage.java      ← Message model
+│       └── res/
+│           ├── layout/       ← XML UI files
+│           ├── drawable/     ← Shapes & backgrounds
+│           └── values/       ← Colors, strings, themes
+├── build.gradle
+└── settings.gradle
+
+================================================
+  CREDENTIALS CHANGE KARNE KE LIYE
+================================================
+
+Username/Password:
+  File: app/src/main/java/com/nexusai/chat/LoginActivity.java
+  Line: CORRECT_USERNAME = "admin";
+        CORRECT_PASSWORD = "1234";
+
+Gemini API Key:
+  File: app/src/main/java/com/nexusai/chat/ChatActivity.java
+  Line: GEMINI_API_KEY = "AIzaSy...";
+
+================================================
+  RELEASE APK (Play Store ke liye)
+================================================
+
+Build → Generate Signed Bundle/APK → APK
+→ Create new keystore → Fill details → Build Release
+
+================================================

@@ -1,0 +1,3 @@
+-keep class com.nexusai.chat.** { *; }
+-keep class okhttp3.** { *; }
+-dontwarn okhttp3.**

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.NexusAI" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/green_bright</item>
+        <item name="colorPrimaryVariant">@color/green_mid</item>
+        <item name="colorOnPrimary">@color/bg_deep</item>
+        <item name="colorSecondary">@color/green_mid</item>
+        <item name="android:windowBackground">@color/bg_deep</item>
+        <item name="android:statusBarColor">@color/bg_deep</item>
+        <item name="android:navigationBarColor">@color/bg_deep</item>
+    </style>
+
+    <style name="Theme.NexusAI.Splash" parent="Theme.NexusAI">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

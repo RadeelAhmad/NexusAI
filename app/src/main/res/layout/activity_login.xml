@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_deep"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="28dp"
+        android:minHeight="600dp">
+
+        <!-- Logo -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✦"
+            android:textSize="52sp"
+            android:textColor="@color/green_bright"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEXUS AI"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/green_bright"
+            android:letterSpacing="0.3"
+            android:fontFamily="monospace"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SECURE LOGIN"
+            android:textSize="11sp"
+            android:textColor="@color/text_secondary"
+            android:letterSpacing="0.25"
+            android:fontFamily="monospace"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="36dp"/>
+
+        <!-- Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="20dp">
+
+            <!-- Username label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USERNAME"
+                android:textSize="10sp"
+                android:textColor="@color/green_dim"
+                android:letterSpacing="0.2"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Username field -->
+            <LinearLayout
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_input"
+                android:paddingHorizontal="14dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="👤"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="10dp"/>
+
+                <EditText
+                    android:id="@+id/et_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter username"
+                    android:hintTextColor="@color/text_muted"
+                    android:textColor="@color/text_primary"
+                    android:textSize="15sp"
+                    android:background="@null"
+                    android:paddingVertical="14dp"
+                    android:inputType="text"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <!-- Password label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PASSWORD"
+                android:textSize="10sp"
+                android:textColor="@color/green_dim"
+                android:letterSpacing="0.2"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Password field -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_input"
+                android:paddingHorizontal="14dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🔒"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="10dp"/>
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Enter password"
+                    android:hintTextColor="@color/text_muted"
+                    android:textColor="@color/text_primary"
+                    android:textSize="15sp"
+                    android:background="@null"
+                    android:paddingVertical="14dp"
+                    android:inputType="textPassword"
+                    android:singleLine="true"/>
+
+                <ImageView
+                    android:id="@+id/iv_toggle_pass"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_eye"
+                    android:padding="2dp"
+                    android:clickable="true"
+                    android:focusable="true"/>
+            </LinearLayout>
+
+            <!-- Error -->
+            <TextView
+                android:id="@+id/tv_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/danger"
+                android:textSize="12sp"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:layout_marginBottom="12dp"
+                android:visibility="invisible"/>
+
+            <!-- Login Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LOGIN →"
+                android:textColor="@color/bg_deep"
+                android:textSize="14sp"
+                android:fontFamily="monospace"
+                android:letterSpacing="0.15"
+                android:textStyle="bold"
+                android:paddingVertical="14dp"
+                app:backgroundTint="@color/green_bright"
+                app:cornerRadius="12dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Demo: admin / 1234"
+            android:textSize="12sp"
+            android:textColor="@color/text_muted"
+            android:fontFamily="monospace"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+</ScrollView>

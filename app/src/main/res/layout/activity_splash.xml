@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/bg_deep">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="✦"
+        android:textSize="56sp"
+        android:textColor="@color/green_bright"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEXUS AI"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/green_bright"
+        android:letterSpacing="0.3"
+        android:fontFamily="monospace"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POWERED BY GEMINI"
+        android:textSize="11sp"
+        android:textColor="@color/text_secondary"
+        android:letterSpacing="0.25"
+        android:fontFamily="monospace"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
