@@ -3,11 +3,13 @@
 NexusAI is a lightweight AI chat application powered by the Gemini API. It provides a simple and user-friendly interface for interacting with Google's Gemini models while allowing users to manage API settings, model selection, and custom AI instructions.
 
 ## Features
-🔐 Authentication
-Secure login page
-Default credentials:
+### 🔐 Authentication
+- Secure login page
+- Default credentials:
+```bash
 Username: admin
 Password: 1234
+```
 Optional Gemini API key configuration during setup
 💬 AI Chat
 Real-time conversations with Gemini AI
