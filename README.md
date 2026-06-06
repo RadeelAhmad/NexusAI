@@ -42,6 +42,7 @@ Configuration Panel
 ### Configuration Options
 
 **API Key**
+
 NexusAI requires a valid Gemini API key to communicate with Gemini models.
 Example:
 ```bash
@@ -49,6 +50,7 @@ AIzaSyXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
 
 **Model Selection**
+
 Supported models may include:
 ```bash
 gemini-2.5-pro
