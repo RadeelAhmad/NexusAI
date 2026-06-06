@@ -95,18 +95,21 @@ Open the chat interface and begin interacting with the AI assistant.
 
 ## Project Structure
 ```bash
-NexusAI/
-│
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── services/
-│   └── assets/
-│
-├── App.js
-├── app
-├── README.md
-└── package.json
+NexusAI
+    ├───app
+    │   └───src
+    │       └───main
+    │           ├───java
+    │           │   └───com
+    │           │       └───nexusai
+    │           │           └───chat
+    │           └───res
+    │               ├───drawable
+    │               ├───layout
+    │               ├───menu
+    │               └───values
+    └───gradle
+        └───wrapper
 ```
 
 ## Security Notice
