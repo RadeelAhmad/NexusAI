@@ -103,8 +103,8 @@ NexusAI/
 │   ├── services/
 │   └── assets/
 │
-├── config/
-├── public/
+├── App.js
+├── app
 ├── README.md
 └── package.json
 ```
