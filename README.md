@@ -25,39 +25,36 @@ Customize the behavior of NexusAI through the configuration menu:
 - Save configuration settings
 
 ### 🛠 Utilities
-Clear chat history
-Update API credentials
-Switch between supported Gemini models
-Modify AI behavior using custom instructions
-Screenshots
+- Clear chat history
+- Update API credentials
+- Switch between supported Gemini models
+- Modify AI behavior using custom instructions
+
+### Screenshots
 
 Add screenshots here:
-
+```bash
 Login Page
 Chat Interface
 Configuration Panel
-Default Login Credentials
-Username: admin
-Password: 1234
+```
 
-⚠️ It is recommended to change these credentials before deploying the application in a production environment.
+### Configuration Options
 
-Configuration Options
-API Key
-
+**API Key**
 NexusAI requires a valid Gemini API key to communicate with Gemini models.
-
 Example:
-
+```bash
 AIzaSyXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-Model Selection
+```
 
+**Model Selection**
 Supported models may include:
-
+```bash
 gemini-2.5-pro
 gemini-2.5-flash
 gemini-2.5-flash-lite
-
+```
 The available models depend on your Gemini API access.
 
 System Prompt
